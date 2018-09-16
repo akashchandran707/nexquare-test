@@ -1,0 +1,78 @@
+page-component-configuration {
+    .content-wrap {
+        background-color: #f1f1f1;
+
+        .page-header-text {
+            font-size: 16px;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        .breadcrumbs-text {
+            font-size: 11px;
+            font-weight: 500;
+            text-align: left;
+            padding-top: 5px; 
+        }
+
+        .header-spacing {
+            width: 100%;
+            .spacer-right {
+                margin-right: auto
+            }
+            .spacer-left {
+                margin-left: auto
+            }
+            
+        }
+
+        .component-section-wrapper {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-top: 15px;
+            width: 100%;
+            
+            .component-section {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                padding: 10px;
+                background-color: #fff;
+
+
+                .section-header {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    margin-bottom: 15px;
+
+                    span {
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .button-color {
+        background: linear-gradient(to right, #ff8499, #ffbb9a);
+    }
+    
+}

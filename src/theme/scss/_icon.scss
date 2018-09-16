@@ -1,0 +1,79 @@
+
+  @font-face {
+    font-family: 'nexsquare';
+    src:  url('../../assets/icon-font/nexsquare.eot?y5fznl');
+    src:  url('../../assets/icon-font/nexsquare.eot?y5fznl#iefix') format('embedded-opentype'),
+      url('../../assets/icon-font/nexsquare.ttf?y5fznl') format('truetype'),
+      url('../../assets/icon-font/nexsquare.woff?y5fznl') format('woff'),
+      url('../../assets/icon-font/nexsquare.svg?y5fznl#nexsquare') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="nex-"], [class*=" nex-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'nexsquare' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .nex-user:before {
+    content: "\e900";
+  }
+  .nex-calendar:before {
+    content: "\e901";
+  }
+  .nex-date:before {
+    content: "\e901";
+  }
+  .nex-schedule:before {
+    content: "\e901";
+  }
+  .nex-graduation-cap:before {
+    content: "\e902";
+  }
+  .nex-mortar-board:before {
+    content: "\e902";
+  }
+  .nex-bell:before {
+    content: "\e903";
+  }
+  .nex-book:before {
+    content: "\e91f";
+  }
+  .nex-coin-dollar:before {
+    content: "\e93b";
+  }
+  .nex-clock2:before {
+    content: "\e94f";
+  }
+  .nex-bell1:before {
+    content: "\e951";
+  }
+  .nex-bubble:before {
+    content: "\e96b";
+  }
+  .nex-user1:before {
+    content: "\e971";
+  }
+  .nex-equalizer:before {
+    content: "\e992";
+  }
+  .nex-leaf:before {
+    content: "\e9a4";
+  }
+  .nex-menu:before {
+    content: "\e9bd";
+  }
+  .nex-loop2:before {
+    content: "\ea2e";
+  }
+  

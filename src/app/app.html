@@ -1,17 +1,45 @@
 <ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header>
+        <ion-toolbar>
+            <button ion-button icon-only menuToggle>
+                <ion-icon name="md-menu"></ion-icon>
+            </button>
+            <ion-title class="app-header">Culcheth High School</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-  <ion-content>
-    <ion-list>
+    <ion-content>
+
+        <ion-row>
+            <ion-col col-3 no-padding no-margin>
+                <ion-list class="nex-menu-icon-wrap" no-margin>
+                    <a ion-item no-lines class="nex-menu-item" *ngFor="let page of pages;let i = index" [ngClass]="{'active':selectedMainMenuIndex == i}" (click)="selectedMainMenu = page; selectedMainMenuIndex = i">
+                        <span [ngClass]="page.iconName"></span>
+                    </a>
+                </ion-list>
+            </ion-col>
+            <ion-col col-9 no-padding class="nex-submenu-wrap">
+                <ion-row *ngIf="selectedMainMenu">
+                    <!-- Project filter content -->
+                    <div class="nex-menu-heading">
+                        <ion-label text-center text-uppercase>{{selectedMainMenu.title}}</ion-label>
+                    </div>
+                    <a [ngClass]="{'active': selectedSubMenuIndex == i}" menuClose ion-item no-lines *ngFor="let subMenu of selectedMainMenu.subMenus; let i = index" (click)="selectedSubMenuIndex = i;openPage(subMenu.component);">
+                        {{subMenu.name}}
+                    </a>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+
+
+
+
+        <!-- <ion-list>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
-    </ion-list>
-  </ion-content>
+    </ion-list> -->
+    </ion-content>
 
 </ion-menu>
 

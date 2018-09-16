@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="md-menu"></ion-icon>
+    </button>
+    <ion-title class="app-header">Culcheth High School</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="content-wrap">
+  <ion-row>
+    <ion-row class="header-spacing">
+      <ion-col col-9 class="spacer-right">
+        <ion-row>
+          <span class="page-header-text" text-nowrap>Component Configuration</span>
+        </ion-row>
+        <ion-row>
+          <span class="breadcrumbs-text">{{page?.parentName }} {{page?.pageName ? ' / ' + page.pageName : null}}</span>
+        </ion-row>
+      </ion-col>
+      <ion-col col-3 class="spacer-left">
+        <button ion-button small icon-start float-right class="button-color">
+          <ion-icon name="md-add" color="#ffffff"></ion-icon> Add
+        </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="component-section-wrapper">
+      <ion-row class="component-section">
+        <ion-row class="section-header">
+          <span>General Settings</span>
+        </ion-row>
+      </ion-row>
+    </ion-row>
+
+    <ion-row class="component-section-wrapper">
+        <ion-row class="component-section">
+          <ion-row class="section-header">
+            <span>Components</span>
+          </ion-row>
+        </ion-row>
+      </ion-row>
+
+
+
+  </ion-row>
+</ion-content>

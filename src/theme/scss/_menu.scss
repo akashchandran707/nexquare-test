@@ -1,0 +1,42 @@
+.nex-menu {
+    border: 1px;
+}
+
+.nex-menu-icon-wrap {
+    height: -webkit-fill-available !important;
+    border-right: 2px solid #eaeaea;
+    text-align: center;
+    a:first-child {
+        padding-top: 10px;
+    }
+    .nex-menu-item {
+        &.active {
+            color: #ffa5a5 !important;
+        }
+        text-align: center;
+        font-size: 25px;
+        color: #b7b7b7;
+    }
+}
+.nex-submenu-wrap {
+    a {
+        &.active {
+            background-color: #fdecec !important;
+        }
+    }
+    color: #b7b7b7;
+    .nex-menu-heading{
+        border-bottom: #dedede 1px solid;
+        width: -webkit-fill-available;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    a {
+        color: #b7b7b7;
+    }
+}
+
+.toolbar-title {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
